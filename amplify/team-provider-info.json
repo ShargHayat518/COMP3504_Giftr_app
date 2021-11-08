@@ -10,6 +10,17 @@
       "StackName": "amplify-giftrapp-dev-130449",
       "StackId": "arn:aws:cloudformation:ca-central-1:365675583695:stack/amplify-giftrapp-dev-130449/2258dde0-40cf-11ec-9a17-0a67c67bfcf0",
       "AmplifyAppId": "d3t637vfyfgc45"
+    },
+    "categories": {
+      "auth": {
+        "cognito0807e8af": {}
+      },
+      "function": {
+        "function": {
+          "deploymentBucketName": "amplify-giftrapp-dev-130449-deployment",
+          "s3Key": "amplify-builds/function-5555644e6d6e71703648-build.zip"
+        }
+      }
     }
   }
 }
