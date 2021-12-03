@@ -32,7 +32,8 @@ app.use(function(req, res, next) {
 
 app.get('/items', function(req, res) {
   // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+  Amplify.Storage.
+  res.json({success: 'get call succeed! YAY', url: req.url});
 });
 
 app.get('/items/*', function(req, res) {

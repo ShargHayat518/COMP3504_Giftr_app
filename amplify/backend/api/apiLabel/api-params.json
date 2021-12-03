@@ -1,49 +1,36 @@
 {
-  "paths": [
-    {
-      "name": "/items",
-      "lambdaFunction": "function",
-      "privacy": {
-        "protected": true,
-        "auth": [
-          "/POST",
-          "/GET",
-          "/PUT",
-          "/PATCH",
-          "/DELETE"
-        ],
-        "unauth": [
-          "/POST",
-          "/GET",
-          "/PUT",
-          "/PATCH",
-          "/DELETE"
-        ]
-      },
-      "policyResourceName": "/items"
-    }
-  ],
-  "resourceName": "apiLabel",
-  "apiName": "apiLabel",
-  "functionArns": [
-    {
-      "lambdaFunction": "function"
-    }
-  ],
-  "privacy": {
-    "auth": 1,
-    "unauth": 1,
-    "authRoleName": "amplify-giftrapp-dev-130449-authRole",
-    "unAuthRoleName": "amplify-giftrapp-dev-130449-unauthRole"
-  },
-  "dependsOn": [
-    {
-      "category": "function",
-      "resourceName": "function",
-      "attributes": [
-        "Name",
-        "Arn"
-      ]
-    }
-  ]
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "function",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/items"
+        }
+    ],
+    "resourceName": "apiLabel",
+    "apiName": "apiLabel",
+    "functionArns": [
+        {
+            "lambdaFunction": "function"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-giftrapp-dev-130449-authRole",
+        "unAuthRoleName": "amplify-giftrapp-dev-130449-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "function",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "dea3494b"
 }

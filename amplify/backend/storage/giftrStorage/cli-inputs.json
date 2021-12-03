@@ -1,0 +1,12 @@
+{
+  "resourceName": "giftrStorage",
+  "tableName": "User_Info",
+  "partitionKey": {
+    "fieldName": "user_id",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": [
+    "function"
+  ]
+}
