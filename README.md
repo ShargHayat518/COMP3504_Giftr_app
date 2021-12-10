@@ -5,3 +5,5 @@ Once inside, the user sees a list of friends sorted by nearest birthday. If ther
 to enter attributes about their friend including their interests. 
 
 Once the friend's interests are stored, the application pulls data from Amazon's API to create a list of gift recommendations for each of the user's friends. 
+
+Known issues: the min and max price do not affect the gift price as they should due to incompatability with the Amazon API. When editing a friend, it creates a new friend instead of editing the first one. 
