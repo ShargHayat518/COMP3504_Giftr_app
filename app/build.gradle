@@ -10,6 +10,7 @@ android {
         applicationId "com.example.giftr_app"
         minSdkVersion 19
         targetSdkVersion 30
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
 
@@ -22,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    //FOR GRAPHQL
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -40,8 +42,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // Amplify core dependency
-    implementation 'com.amplifyframework:core:1.28.3'
+    //implementation 'com.amplifyframework:core:1.28.3'
+    implementation 'com.amplifyframework:core:1.30.0'
+    implementation 'com.amplifyframework:aws-api:1.30.0'
 
     // Support for Java 8 features
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+
+    // Enable multi-dex for GraphQL
+    implementation "androidx.multidex:multidex:2.0.1"
+
 }
