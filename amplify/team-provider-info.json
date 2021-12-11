@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-comp3504giftrapp-dev-05042-authRole",
+      "UnauthRoleArn": "arn:aws:iam::365675583695:role/amplify-comp3504giftrapp-dev-05042-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::365675583695:role/amplify-comp3504giftrapp-dev-05042-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-comp3504giftrapp-dev-05042-deployment",
+      "UnauthRoleName": "amplify-comp3504giftrapp-dev-05042-unauthRole",
+      "StackName": "amplify-comp3504giftrapp-dev-05042",
+      "StackId": "arn:aws:cloudformation:ca-central-1:365675583695:stack/amplify-comp3504giftrapp-dev-05042/8d17fc90-57fb-11ec-b329-06fdcee6dada",
+      "AmplifyAppId": "dycfed9e6r7jy"
+    },
+    "categories": {
+      "auth": {
+        "comp3504giftrapp3f9b04b7": {}
+      }
+    }
+  }
+}

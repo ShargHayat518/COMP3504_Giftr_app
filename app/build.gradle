@@ -33,21 +33,37 @@ android {
 
 dependencies {
 
+
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.android.support:multidex:1.0.3'
 
     // Amplify core dependency
-    implementation 'com.amplifyframework:core:1.28.3'
+    implementation 'com.amplifyframework:core:1.30.0'
 
     // for amplify
     implementation 'com.amplifyframework:aws-auth-cognito:1.30.0'
 
     // Support for Java 8 features
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+
+    // for colour picker
+    implementation 'com.github.yukuku:ambilwarna:2.0.1'
+
+    // for amplify
+    implementation 'com.amplifyframework:aws-auth-cognito:1.30.0'
+
+
+    //for botton icons
+    implementation 'com.google.android.material:material:1.0.0'
 
     // added for circular photo
     implementation 'de.hdodenhof:circleimageview:3.1.0'

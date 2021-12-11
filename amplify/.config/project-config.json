@@ -1,0 +1,13 @@
+{
+  "providers": [
+    "awscloudformation"
+  ],
+  "projectName": "COMP3504Giftrapp",
+  "version": "3.1",
+  "frontend": "android",
+  "android": {
+    "config": {
+      "ResDir": "app"
+    }
+  }
+}
