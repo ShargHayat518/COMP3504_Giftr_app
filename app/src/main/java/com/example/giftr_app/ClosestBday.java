@@ -66,6 +66,8 @@ public class ClosestBday extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_layout);
         findViewById(R.id.addFriend).setOnClickListener(this);
+        findViewById(R.id.settings).setOnClickListener(this);
+        findViewById(R.id.birthdays).setOnClickListener(this);
 
         requestQueue = Volley.newRequestQueue(this);
 //        image = findViewById(R.id.profilePic);
@@ -104,15 +106,9 @@ public class ClosestBday extends AppCompatActivity implements View.OnClickListen
                         @Override
                         public void onResponse(JSONObject response) {
                             // What should we do after the response is ready
-                           // Toast.makeText(ClosestBday.this, response.toString(), Toast.LENGTH_LONG).show();
-                            //   String stringObj = response.getJSONObject("items").getJSONArray().getJSONObject(0);
 
                             try {
 
-                                Toast.makeText(ClosestBday.this, "inside try######", Toast.LENGTH_LONG).show();
-                                //Log.i("Search", "inside try$$$$$$$");
-                                //  JSONArray json_data = response.getJSONArray("data");
-                                ///  JSONObject json_data = response.getJSONObject("data");
 
                                 JSONArray jArray = response.getJSONArray("Items");
 
@@ -130,7 +126,6 @@ public class ClosestBday extends AppCompatActivity implements View.OnClickListen
                                     gender = obj.getString("gender");
                                     String friendsUserId = obj.getString("user_id");
                                     int colour = obj.getInt("color_id");
-                                    Toast.makeText(ClosestBday.this, "friend user id"+ friendsUserId, Toast.LENGTH_LONG).show();
                                     String interests = obj.getString("interests");
                                     int min = obj.getInt("min_price");
                                     int max = obj.getInt("max_price");
@@ -140,7 +135,6 @@ public class ClosestBday extends AppCompatActivity implements View.OnClickListen
                                     //as any of the friends, if so, create a friend obj and add to friend
                                     //list
                                     if(userId.equals(friendsUserId)){
-                                        Toast.makeText(ClosestBday.this, "if********", Toast.LENGTH_LONG).show();
 
                                         friend= new Friend(name,bYear, bMonth, bDay, gender);
                                         friend.setColour(colour);
@@ -155,28 +149,12 @@ public class ClosestBday extends AppCompatActivity implements View.OnClickListen
                                         addInformation(friend,birthInfo);
 
                                     }
-//                                 else{
-//
-//                                        //bring user to a different page that says to create a new friend,
-//                                        //click this button to create new friends
-//                                        Toast.makeText(ClosestBday.this, "else@@@@@@@@", Toast.LENGTH_LONG).show();
-//                                        Intent intent = new Intent(ClosestBday.this, NoFriendsYet.class);
-//
-//                                        Bundle info = new Bundle();
-//
-//                                        //putting email in bundle
-//                                        info.putSerializable("userId", userId);
-//                                        intent.putExtras(info);
-//                                        startActivity(intent);
-//
-//                                    }
 
                                 }
                                 setListView(friendSLL);
                             }
                             //iterates through all the friends
                             else{
-                                Toast.makeText(ClosestBday.this, "else@@@@@@@@", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(ClosestBday.this, NoFriendsYet.class);
 
                                 Bundle info = new Bundle();

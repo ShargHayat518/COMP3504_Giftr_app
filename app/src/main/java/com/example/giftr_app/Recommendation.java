@@ -57,6 +57,7 @@ public class Recommendation extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rec_listview_layout);
         findViewById(R.id.birthdays).setOnClickListener(this);
+        findViewById(R.id.settings).setOnClickListener(this);
         Intent intent = getIntent();
 
         Bundle bundle = intent.getExtras();
@@ -71,7 +72,6 @@ public class Recommendation extends AppCompatActivity implements View.OnClickLis
 
             String s = friend.getStringInterests();
 
-            //Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
             interestArray = s.split(",");
             //move array into arraylist
             interestAList.addAll(Arrays.asList(interestArray));

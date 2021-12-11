@@ -27,7 +27,6 @@
         <activity android:name=".Settings"/>
         <activity android:name=".ClosestBday"></activity>
         <activity android:name=".Recommendation"></activity>
-        <activity android:name=".FriendPage"></activity>
         <activity android:name=".NoFriendsYet"/>
 
 
