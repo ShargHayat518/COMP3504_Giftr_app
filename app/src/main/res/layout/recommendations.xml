@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+    <!--weight sum is for creating the total width of the phone, in this case it
+     is out of 100. This allows us to break the 3 different parts into different
+     sections-->
+
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="85"
+        android:contentDescription="TODO"
+        android:gravity="center"
+
+
+        android:text="Icon"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_weight= "15"
+
+        >
+
+        <TextView
+            android:id="@+id/linkView"
+            android:text="Amazon/Wish/Ali Link"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            />
+
+        <TextView
+
+            android:id="@+id/url"
+            android:text="price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/priceView"
+            android:text="Amazon/Wish/Ali Link"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

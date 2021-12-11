@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CDEBEE"
+
+    >
+
+    <!--android:weightSum="4"-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#CDEBEE"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:background="#CDEBEE">
+
+            <TextView
+                android:id="@+id/profilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/black">
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:background="#CDEBEE">
+
+
+                <TextView
+                    android:id="@+id/friendName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="friend name"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="26sp" />
+
+
+                <TextView
+                    android:id="@+id/countDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="# of days until bday"
+                    android:textAlignment="center"
+                    android:textSize= "14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/fragment_container"-->
+<!--            android:layout_above="@+id/bottom"/>-->
+
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/bottom"-->
+<!--            android:layout_alignParentBottom="true">-->
+
+
+<!--&lt;!&ndash;            <com.google.android.material.bottomnavigation.BottomNavigationView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent">&ndash;&gt;-->
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/birthdays"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:drawableLeft="@drawable/ic_person"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColorHint="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/Widget.AppCompat.Button.Borderless"&ndash;&gt;-->
+<!--&lt;!&ndash;                    />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/calendar"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginLeft="123dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:drawableLeft="@drawable/ic_calendar"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/Widget.AppCompat.Button.Borderless"&ndash;&gt;-->
+<!--&lt;!&ndash;                    />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/settings"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginLeft="250dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:drawableLeft="@drawable/ic_setting"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/Widget.AppCompat.Button.Borderless"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </com.google.android.material.bottomnavigation.BottomNavigationView>&ndash;&gt;-->
+
+
+
+
+<!--&lt;!&ndash;        </com.google.android.material.appbar.AppBarLayout>&ndash;&gt;-->
+
+
+<!--    </RelativeLayout>-->
+
+
+</LinearLayout>
+
