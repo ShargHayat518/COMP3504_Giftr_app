@@ -12,6 +12,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -26,7 +27,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
         // Support for Java 8 features
-        coreLibraryDesugaringEnabled true
+        //coreLibraryDesugaringEnabled true
     }
 }
 
@@ -42,6 +43,31 @@ dependencies {
     // Amplify core dependency
     implementation 'com.amplifyframework:core:1.28.3'
 
+    // for amplify
+    implementation 'com.amplifyframework:aws-auth-cognito:1.30.0'
+
     // Support for Java 8 features
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+
+    // added for circular photo
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //added for multidex
+    implementation 'com.android.support:multidex:2.0.1'
+
+    //added for slider
+    implementation 'com.google.android.material:material:<version>'
+
+    // for colour picker
+    implementation 'com.github.yukuku:ambilwarna:2.0.1'
+
+    // for api
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // for navigation bar icons
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // for okhttp
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12'
+
 }

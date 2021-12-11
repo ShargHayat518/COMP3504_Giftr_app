@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendPage"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="#CDEBEE"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/friendPic1"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            android:background="@color/black"
+            android:clickable="true"
+            >
+
+        </TextView>
+
+        <Button
+            android:id="@+id/editFriend"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="145dp"
+            android:text="edit info"
+            android:textAllCaps="false"
+            android:textColor="#3487D3" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/friendName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placeholder friend name"
+        android:textAlignment="center"
+        android:layout_marginTop="-3dp"
+        android:textSize= "24sp" />
+
+    <TextView
+        android:id="@+id/countDownText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Birthday countdown: placeholder days"
+        android:textAlignment="center"
+        android:textSize= "14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            android:background="@drawable/pinkbox">
+
+            <TextView
+                android:id="@+id/recommendationsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommendations"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textColor="#3487D3"
+                android:textSize="20sp"
+                />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/recom1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:background="@drawable/bluebox"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:text="Placeholder Item1"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:minHeight="40dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:elevation="5dp"-->
+            <!--                ></TextView>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/recom2"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:background="@drawable/bluebox"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:text="Placeholder Item2"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:minHeight="40dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:elevation="5dp"-->
+            <!--                ></TextView>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/recom3"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:background="@drawable/bluebox"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:text="Placeholder Item3"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:minHeight="40dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:elevation="5dp"-->
+            <!--                ></TextView>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:orientation="vertical"
+                >
+                <!--weight sum is for creating the total width of the phone, in this case it
+                 is out of 100. This allows us to break the 3 different parts into different
+                 sections-->
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="85"
+                    android:contentDescription="TODO"
+                    android:gravity="center"
+                    android:text="Icon"
+                    app:srcCompat="@android:drawable/presence_audio_online"
+                    android:background="@drawable/bluebox"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight= "15"
+                    android:background="@drawable/bluebox"
+                    >
+                    <TextView
+                        android:id="@+id/linkView"
+                        android:text="Amazon/Wish/Ali Link"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/url"
+                        android:text="price"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:text="Amazon/Wish/Ali Link"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="85"
+                    android:contentDescription="TODO"
+                    android:gravity="center"
+                    android:text="Icon"
+                    app:srcCompat="@android:drawable/presence_audio_online"
+                    android:background="@drawable/bluebox"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight= "15"
+                    android:background="@drawable/bluebox"
+                    >
+                    <TextView
+                        android:id="@+id/linkView2"
+                        android:text="Amazon/Wish/Ali Link"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/url2"
+                        android:text="price"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/price2"
+                        android:text="Amazon/Wish/Ali Link"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+                <Button
+                    android:id="@+id/moreButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:backgroundTint="#CDEBEE"
+                    android:gravity="center"
+                    android:text="See More"
+                    android:textAlignment="center"
+                    android:textColor="#3487D3"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

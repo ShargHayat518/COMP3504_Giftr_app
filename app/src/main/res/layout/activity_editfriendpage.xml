@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDEBEE"
+    tools:context=".EditFriendPage"
+    android:orientation="vertical"
+    android:weightSum="4"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/friendPic"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/teal_200"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+
+            >
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/changePhoto"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="145dp"
+            android:text="change colour"
+            android:textAllCaps="false"
+            android:textColor="#3281a8" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:background="@android:color/transparent"
+            android:hint="Friend's Name Here*"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/countDownText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="Tap to edit"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/pinkbox"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/editDobText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Date of birth:*"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluebox"
+                android:elevation="5dp">
+
+                <Button
+                    android:id="@+id/datePickerButton"
+                    style="?android:spinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="openDatePicker"
+                    android:text="Enter Birth Date"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/editGenderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Gender:"
+                android:textSize="16sp" />
+
+
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluebox"
+                android:elevation="5dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/maleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="30dp"
+                    android:text="Male"
+                    android:textSize="14sp"
+                    android:buttonTint="@color/purple_200"/>
+
+                <RadioButton
+                    android:id="@+id/femaleGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:text="Female"
+                    android:textSize="14sp"
+                    android:buttonTint="@color/purple_200"/>
+
+                <RadioButton
+                    android:id="@+id/otherGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="14sp"
+                    android:buttonTint="@color/purple_200"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/editInterestsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Interests (separated by commas): "
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluebox"
+                android:elevation="5dp">
+
+                <EditText
+                    android:id="@+id/editInterests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#CDEBEE"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLines="20"
+                    android:minHeight="100dp"
+                    android:hint="e.g. video games, reading, coffee, volleyball"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/editPriceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Desired price range:"
+                android:textSize="16sp" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/priceSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:valueFrom="0.0"
+                android:valueTo="150.0"
+                app:values="@array/initial_slider_values"
+                android:stepSize="10.0"
+                app:trackColorActive="@color/purple_200"
+                app:thumbColor="@color/purple_200"
+                app:thumbElevation="5dp"
+
+                android:background="@drawable/bluebox"
+                android:elevation="5dp"
+
+                >
+            </com.google.android.material.slider.RangeSlider>
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3281a8"
+                android:text="save">
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
